@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "myapp/protos/notify";
+option go_package = "github.com/Gabo3103/protos/notify";
 
 service RegionalServer {
   rpc NotifyKeysGenerated (KeysGeneratedRequest) returns (KeysGeneratedResponse);

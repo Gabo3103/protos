@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "myapp/protos/notify";
+
+service RegionalServer {
+  rpc NotifyKeysGenerated (KeysGeneratedRequest) returns (KeysGeneratedResponse);
+}
+
+message KeysGeneratedRequest {
+  int32 keys_generated = 1;
+}
+
+message KeysGeneratedResponse {
+  string message = 1;
+}
